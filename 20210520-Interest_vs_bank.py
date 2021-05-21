@@ -1,0 +1,7 @@
+s=eval(input("请输入扫单年化收益(%):"))
+bankprice=eval(input("请输入银行股股价(元):"))
+b=eval(input("请输入银行股每年分红(每10派/元):"))
+n=eval(input("请输入购买银行股的数量(股):"))
+year=eval(input("请输入存放时间(年):"))
+print("存放{}年的扫单收益大约为{:.2f}元".format(year,bankprice*n*pow(1+s/100/365,year*365)-bankprice*n))
+print("存放{}年的银行分红收益大约为{:.2f}元".format(year,b*(n/10)))
